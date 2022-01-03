@@ -1,5 +1,3 @@
-<h1 align="center">Code Institute Website</h1>
-
 [View the live project here.](https://great-graphics.herokuapp.com/)
 
 This is the main marketing website for Great Graphics.
@@ -288,7 +286,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-## Credits
 
 ### Code
 
@@ -297,23 +294,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 -   [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
 
-### Content
-
--   The code was generated from the Code Institute Boutique Ado Project.
--   The Template pages were generated from the Code Institute Hello Django Project.
--   All content was written by the developer.
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
-
-### Media
-
--   All Images were sourced from Freepik.
-
-
-### Acknowledgements
-
--   My Mentor Guido Cecilio for continuous helpful feedback.
--   Tutor support at Code Institute for their support.
--   Tutor support. db.sqlite3 was corrupted when a model was updated with data in the database. The major part of the database with graphics and categories were downloaded as a JSON file before the database was recreated.
 
 ### Bug Fixes
 
@@ -327,8 +307,4 @@ checkout/models.py
         else:
             self.discount_amount = 0
 
-
- set self.discount_amount = 0 then did not work for discount so used Decimal there.
-
--   It was a challenge to get access to tutor support. I received Mentor support in debugging add_testimonial.html
 

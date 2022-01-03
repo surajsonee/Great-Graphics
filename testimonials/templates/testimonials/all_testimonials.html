@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    {% for testimonial in testimonials %}
+
+
+    <div class="row">
+
+
+        <div>
+            <table>
+                <tr>
+
+                    <td>{{ testimonial.stars }}</td>
+                    <td>{{ testimonial.text }}</td>
+                    <td>{{ testimonial.author }}</td>
+
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <a href="{% url 'edit_testimonial' testimonial.id %}">Edit</a>
+        </div>
+        <div>
+            <a href="{% url 'delete_testimonial' testimonial.id %}">Delete</a>
+        </div>
+        <br>
+    </div>
+    {% empty %}
+
+    <div>
+        There are no testimonials.
+    </div>
+    {% endfor %}
+
+    <a href="{% url 'add_testimonial' %}">Add a Testimonial</a>
+
+
+    <div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}

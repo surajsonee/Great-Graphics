@@ -1,0 +1,9 @@
+<p class="my-0"><strong>{{ item.graphic.name }}</strong></p>
+<p class="my-0"><strong>Size: </strong>{% if item.graphic.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+
+<p class="my-0"><strong>Orientation:
+    </strong>{% if item.graphic.has_sizes %}{{ item.orientation|upper }}{% else %}N/A{% endif %}</p>
+<p class="my-0"><strong>Requirement:
+    </strong>{% if item.graphic.has_sizes %}{{ item.requirement|upper }}{% else %}N/A{% endif %}</p>
+
+<p class="my-0 small text-muted">SKU: {{ item.graphic.sku|upper }}</p>

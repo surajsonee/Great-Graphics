@@ -1,0 +1,1 @@
+web: gunicorn great_graphics.wsgi:application

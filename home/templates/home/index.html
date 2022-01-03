@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- page_header from base template -->
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- h100 = 100% height -->
+<div class="container h-100">
+    <!-- h100 = 100% height -->
+    <div class="row h-100">
+        <!-- 7 columns with 6 on a medium screen -->
+        <!-- my-auto to vertically centre -->
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                We create amazing graphics for our customers
+            </h1>
+            <!-- my-5 margin -->
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'graphics' %}"
+                        class="order-graphic-button btn btn-lg rounded-0 text-uppercase py-3">Order Graphic</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
